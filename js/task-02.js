@@ -8,6 +8,9 @@ const ingredients = [
   'Condiments',
 ];
 
+recipe.innerHTML = `<li style="list-style:none;padding:0;"><h2>Ingredients:</h2></li>`;
+
+
 for (const ingredient of ingredients) {
   const list = document.createElement("li");
   list.textContent = ingredient;
