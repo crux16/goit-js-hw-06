@@ -9,7 +9,9 @@ function getRandomHexColor() {
 
 bgBtn.addEventListener('click', () => {
   const bgHex = document.querySelector('.color');
+  const bgDoc = document.querySelector('body');
   const randomColor = getRandomHexColor();
-  bgChange.style.backgroundColor = randomColor;
+  bgDoc.style.backgroundColor = randomColor;
+  bgDoc.style.transition = 'background-color '+250+'ms cubic-bezier('+0.4+','+0+','+0.2+','+1+') 100ms';
   bgHex.innerHTML = randomColor;
 })

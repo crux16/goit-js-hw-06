@@ -3,7 +3,7 @@ const categories = document.getElementById('categories');
 
 // finding children of the ID and collecting the number of children
 const listCategory = categories.children;
-console.log(`Number of categories: ${listCategory.length}`);
+console.log('Number of categories: ',listCategory.length);
 
 // finding other list of all queries class from DOM
 const lists = document.querySelectorAll('.item');
@@ -16,6 +16,6 @@ for (let i = 0; i < lists.length; i += 1) {
     // finding the last element which is the ul and counts the number of item
     const countElement = lists[i].lastElementChild.children.length;
     console.log(' ');
-    console.log("Category: " + title );
-    console.log("Element: " + countElement);
+    console.log("Category: ", title );
+    console.log("Element: ", countElement);
 }

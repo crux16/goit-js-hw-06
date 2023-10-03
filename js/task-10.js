@@ -44,6 +44,7 @@ createBtn.addEventListener('click', () => {
 
 destroyBtn.addEventListener('click', () => {
   if(boxes.innerHTML) {
+    inputRange.value = 0;
     return boxes.innerHTML = '';
   }
     alert('The box is empty!');
